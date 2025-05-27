@@ -4,14 +4,33 @@ import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Copy, Menu, Sun, Moon, Globe, Check } from 'lucide-react'
+import Domains from '@/components/domains'
+import { Domain } from '@/types/domain'
 
 export default function Home() {
   const [isDark, setIsDark] = useState(false)
   const [copiedText, setCopiedText] = useState('')
   const [mounted, setMounted] = useState(false)
+  const [domain, setDomain] = useState<Domain | null>(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     setMounted(true)
+    // 获取最新域名
+    const fetchDomain = async () => {
+      try {
+        const response = await fetch('/api/domains')
+        if (!response.ok) throw new Error('Failed to fetch domain')
+        const data = await response.json()
+        setDomain(data)
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'An error occurred')
+      } finally {
+        setLoading(false)
+      }
+    }
+    fetchDomain()
   }, [])
 
   const copyToClipboard = async (text: string) => {
@@ -70,25 +89,10 @@ export default function Home() {
               <a className="flex items-center space-x-2" href="/en">
                 <span className="font-bold text-lg md:text-xl">Get Z-Library</span>
               </a>
-              <nav className="hidden md:flex gap-6">
-                <a className="text-sm font-medium transition-colors hover:text-primary text-foreground" href="/en">
-                  Home
-                </a>
-                <a className="text-sm font-medium transition-colors hover:text-primary text-muted-foreground" href="/en/magic-email">
-                  Magic Email
-                </a>
-                <a className="text-sm font-medium transition-colors hover:text-primary text-muted-foreground" href="/en/android-app">
-                  Android App
-                </a>
-                <a className="text-sm font-medium transition-colors hover:text-primary text-muted-foreground" href="/en/blog">
-                  Blog
-                </a>
-              </nav>
             </div>
             <div className="flex items-center gap-2 md:gap-4">
               <Button variant="ghost" size="sm" className="gap-1">
                 <Globe className="h-4 w-4" />
-                <span className="hidden md:inline-block">English</span>
               </Button>
               {mounted && (
                 <Button
@@ -129,39 +133,47 @@ export default function Home() {
             </CardHeader>
             <CardContent className="p-0">
               <div className="space-y-4">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between p-4 md:p-6 rounded-lg border bg-background/50 gap-4">
-                  <div className="flex items-center gap-2">
-                    <a
-                      href="https://z-library.sk"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline text-base md:text-lg break-all"
-                    >
-                      https://z-library.sk
-                    </a>
-                    {mounted && (
-                      <Button
-                        variant="ghost"
-                        size="icon"
-                        className="h-8 w-8 rounded-full flex-shrink-0"
-                        onClick={() => copyToClipboard('https://z-library.sk')}
-                        title="Copy to clipboard"
+                {loading ? (
+                  <div className="p-4 text-center">Loading domain...</div>
+                ) : error ? (
+                  <div className="p-4 text-center text-red-500">{error}</div>
+                ) : !domain ? (
+                  <div className="p-4 text-center">No domain found.</div>
+                ) : (
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between p-4 md:p-6 rounded-lg border bg-background/50 gap-4">
+                    <div className="flex items-center gap-2">
+                      <a
+                        href={domain.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary hover:underline text-base md:text-lg break-all"
                       >
-                        {copiedText === 'https://z-library.sk' ? (
-                          <Check className="h-4 w-4 text-green-500" />
-                        ) : (
-                          <Copy className="h-4 w-4" />
-                        )}
-                      </Button>
-                    )}
+                        {domain.url}
+                      </a>
+                      {mounted && (
+                        <Button
+                          variant="ghost"
+                          size="icon"
+                          className="h-8 w-8 rounded-full flex-shrink-0"
+                          onClick={() => copyToClipboard(domain.url)}
+                          title="Copy to clipboard"
+                        >
+                          {copiedText === domain.url ? (
+                            <Check className="h-4 w-4 text-green-500" />
+                          ) : (
+                            <Copy className="h-4 w-4" />
+                          )}
+                        </Button>
+                      )}
+                    </div>
+                    <div className="flex items-center gap-4 md:flex-shrink-0">
+                      <span className="text-green-500">●</span>
+                      <span className="text-xs md:text-sm text-muted-foreground whitespace-nowrap">
+                        Last checked: {new Date(domain.lastChecked).toLocaleString()}
+                      </span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-4 md:flex-shrink-0">
-                    <span className="text-green-500">●</span>
-                    <span className="text-xs md:text-sm text-muted-foreground whitespace-nowrap">
-                      Last checked: 2025-05-22 13:44:08
-                    </span>
-                  </div>
-                </div>
+                )}
               </div>
             </CardContent>
           </Card>
@@ -245,42 +257,26 @@ export default function Home() {
                   We help users find the latest working Z-Library domains.
                 </p>
               </div>
-              <div>
-                <h3 className="text-base font-semibold mb-3 md:mb-4">Quick Links</h3>
-                <div className="grid grid-cols-2 gap-x-4 gap-y-2">
-                  <a className="text-sm text-muted-foreground hover:text-primary transition-colors" href="/en">
-                    Home
-                  </a>
-                  <a className="text-sm text-muted-foreground hover:text-primary transition-colors" href="/en/blog">
-                    Blog
-                  </a>
-                  <a className="text-sm text-muted-foreground hover:text-primary transition-colors" href="/en/privacy">
-                    Privacy Policy
-                  </a>
-                  <a className="text-sm text-muted-foreground hover:text-primary transition-colors" href="/en/terms">
-                    Terms of Service
-                  </a>
-                </div>
-              </div>
             </div>
 
-            <div className="mt-8 pt-6 border-t">
-              <h3 className="text-base font-semibold mb-4 text-center md:text-left">Available Languages</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <a className="flex items-center gap-2 px-3 py-2 rounded-md transition-colors bg-primary/10 text-primary font-medium" href="/en">
-                  <span>English</span>
-                </a>
-                <a className="flex items-center gap-2 px-3 py-2 rounded-md transition-colors hover:bg-muted/50 text-muted-foreground hover:text-foreground" href="/zh">
-                  <span>中文</span>
-                </a>
-                <a className="flex items-center gap-2 px-3 py-2 rounded-md transition-colors hover:bg-muted/50 text-muted-foreground hover:text-foreground" href="/ja">
-                  <span>日本語</span>
-                </a>
-                <a className="flex items-center gap-2 px-3 py-2 rounded-md transition-colors hover:bg-muted/50 text-muted-foreground hover:text-foreground" href="/hi">
-                  <span>हिन्दी</span>
-                </a>
-              </div>
+            {/* 删除 Available Languages 区块 */}
+            {/*
+            <h3 className="text-base font-semibold mb-4 text-center md:text-left">Available Languages</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <a className="flex items-center gap-2 px-3 py-2 rounded-md transition-colors bg-primary/10 text-primary font-medium" href="/en">
+                <span>English</span>
+              </a>
+              <a className="flex items-center gap-2 px-3 py-2 rounded-md transition-colors hover:bg-muted/50 text-muted-foreground hover:text-foreground" href="/zh">
+                <span>中文</span>
+              </a>
+              <a className="flex items-center gap-2 px-3 py-2 rounded-md transition-colors hover:bg-muted/50 text-muted-foreground hover:text-foreground" href="/ja">
+                <span>日本語</span>
+              </a>
+              <a className="flex items-center gap-2 px-3 py-2 rounded-md transition-colors hover:bg-muted/50 text-muted-foreground hover:text-foreground" href="/hi">
+                <span>हिन्दी</span>
+              </a>
             </div>
+            */}
 
             <div className="mt-8 md:mt-10 pt-6 border-t flex flex-col md:flex-row md:justify-between md:items-center gap-4">
               <p className="text-center md:text-left text-xs md:text-sm text-muted-foreground">

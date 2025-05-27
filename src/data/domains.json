@@ -1,0 +1,33 @@
+{
+  "domains": [
+    {
+      "url": "https://z-lib.su",
+      "status": "active",
+      "lastChecked": "2025-05-27T03:24:42.975Z",
+      "source": "crawler",
+      "note": "1，第三方"
+    },
+    {
+      "url": "https://zh.kid1412.icu/",
+      "status": "active",
+      "lastChecked": "2025-05-27T03:24:42.976Z",
+      "source": "crawler",
+      "note": "1，第三方"
+    },
+    {
+      "url": "https://z-lib.fm/",
+      "status": "active",
+      "lastChecked": "2025-05-27T03:24:42.976Z",
+      "source": "crawler",
+      "note": "1，官方地址"
+    },
+    {
+      "url": "https://z-library.sk",
+      "status": "active",
+      "lastChecked": "2025-05-27T03:24:42.977Z",
+      "source": "crawler",
+      "note": "1，官方地址"
+    }
+  ],
+  "lastUpdated": "2025-05-27T03:24:42.979Z"
+}

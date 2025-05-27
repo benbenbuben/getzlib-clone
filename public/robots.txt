@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap: 可以根据需要添加
+Sitemap: https://www.aiforai.xyz/sitemap.xml 
