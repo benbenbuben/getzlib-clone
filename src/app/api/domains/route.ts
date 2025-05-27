@@ -8,12 +8,21 @@ const EXPIRE_SECONDS = 86400; // 1天
 export async function GET() {
   // 1. 先查 Redis
   const cached = await redis.get(REDIS_KEY);
+  console.log('[API] Redis cached:', cached);
   if (cached) {
-    return NextResponse.json(JSON.parse(cached));
+    try {
+      const parsed = JSON.parse(cached);
+      console.log('[API] Redis parsed:', parsed);
+      return NextResponse.json(parsed);
+    } catch (e) {
+      console.error('[API] Redis JSON parse error:', e);
+    }
   }
 
   // 2. 没有缓存，爬取数据
+  console.log('[API] No cache, start crawling...');
   const data = await crawlDomains();
+  console.log('[API] Crawler result:', data);
   // 3. 写入 Redis，设置过期
   await redis.set(REDIS_KEY, JSON.stringify(data), 'EX', EXPIRE_SECONDS);
   return NextResponse.json(data);
