@@ -13,7 +13,7 @@ export async function GET() {
     try {
       const parsed = JSON.parse(cached);
       console.log('[API] Redis parsed:', parsed);
-      return NextResponse.json(parsed);
+      return NextResponse.json(parsed.domains[0] || null);
     } catch (e) {
       console.error('[API] Redis JSON parse error:', e);
     }
@@ -25,5 +25,5 @@ export async function GET() {
   console.log('[API] Crawler result:', data);
   // 3. 写入 Redis，设置过期
   await redis.set(REDIS_KEY, JSON.stringify(data), 'EX', EXPIRE_SECONDS);
-  return NextResponse.json(data);
+  return NextResponse.json(data.domains[0] || null);
 } 
