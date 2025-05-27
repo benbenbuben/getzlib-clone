@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ClientBody from "./ClientBody";
+import Script from 'next/script';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,16 +31,19 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`} suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.svg" />
-        {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CHMFSLL64M"></script>
-        <script dangerouslySetInnerHTML={{
-          __html: `
+        {/* Google Analytics 官方推荐用法 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-CHMFSLL64M"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-CHMFSLL64M');
-          `,
-        }} />
+          `}
+        </Script>
         {/* Google Tag Manager */}
         <script dangerouslySetInnerHTML={{
           __html: `
