@@ -11,7 +11,7 @@ async function crawlDomains(): Promise<DomainData> {
 
     const title = $('h2:contains("最新官网地址")');
     console.log('h2:contains("最新官网地址") found:', title.length);
-    let domains: Domain[] = [];
+    const domains: Domain[] = [];
     if (title.length > 0) {
       let next = title.next();
       let idx = 0;
@@ -22,7 +22,7 @@ async function crawlDomains(): Promise<DomainData> {
           const label = span.text();
           if (/第三方|官方地址/.test(label)) {
             // strong 标签后面的文本节点
-            let strongHtml = $(elem).html() || '';
+            const strongHtml = $(elem).html() || '';
             // strong 结束后可能直接跟着 url 文本，也可能在 strong 内部
             // 先尝试 strong 标签内的文本
             const matchInner = strongHtml.match(/<span[^>]*>.*?<\/span>([^<👉\s]+https?:\/\/[^👉\s<]+)/);
