@@ -6,11 +6,12 @@ import { Domain, DomainData } from '../types/domain';
 
 async function crawlDomains(): Promise<DomainData> {
   try {
+    console.log('[CRAWLER] Start crawling at', new Date().toISOString());
     const response = await axios.get('https://www.tboxn.com/sites/320.html');
     const $ = cheerio.load(response.data);
 
     const title = $('h2:contains("最新官网地址")');
-    console.log('h2:contains("最新官网地址") found:', title.length);
+    console.log('[CRAWLER] h2:contains("最新官网地址") found:', title.length);
     const domains: Domain[] = [];
     if (title.length > 0) {
       let next = title.next();
@@ -36,6 +37,7 @@ async function crawlDomains(): Promise<DomainData> {
                   source: 'crawler',
                   note: label.replace(/[:：]/g, '')
                 });
+                console.log('[CRAWLER] Add domain:', url, 'label:', label);
               }
             } else {
               // strong 标签后面的文本节点
@@ -53,6 +55,7 @@ async function crawlDomains(): Promise<DomainData> {
                       source: 'crawler',
                       note: label.replace(/[:：]/g, '')
                     });
+                    console.log('[CRAWLER] Add domain:', url, 'label:', label);
                   }
                 }
               }
@@ -63,19 +66,22 @@ async function crawlDomains(): Promise<DomainData> {
         idx++;
       }
     } else {
-      console.log('未找到 h2:contains("最新官网地址")');
+      console.log('[CRAWLER] 未找到 h2:contains("最新官网地址")');
     }
 
     const data = {
       domains,
       lastUpdated: new Date().toISOString()
     };
-    console.log('精准爬取到的域名:', domains);
+    console.log('[CRAWLER] 精准爬取到的域名:', domains);
     updateLocalDomains(data);
+    console.log('[CRAWLER] updateLocalDomains success');
     return data;
   } catch (error) {
-    console.error('爬虫获取失败:', error);
-    return getLocalDomains();
+    console.error('[CRAWLER] 爬虫获取失败:', error);
+    const fallback = getLocalDomains();
+    console.log('[CRAWLER] fallback to local domains:', fallback);
+    return fallback;
   }
 }
 

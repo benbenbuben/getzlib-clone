@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Z-Library Latest Links | Updated Daily | Z-Library Latest Links",
-  description: "Find the most recent and working Z-Library links. Updated daily with complete access guide and tutorials.",
-  keywords: "",
+  title: "Z-Library 最新链接 | 每日更新 | 免费电子书下载",
+  description: "查找最新可用的 Z-Library 链接，每日更新，提供完整的访问指南和教程。免费下载学术文献和电子书。",
+  keywords: "Z-Library, Z-Library 链接, 免费电子书, 学术文献, 电子书下载, Z-Lib, Zlibrary, 最新链接, 访问指南, 教程",
   icons: {
     icon: "/favicon.svg",
   },

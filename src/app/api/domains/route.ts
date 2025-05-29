@@ -24,6 +24,12 @@ export async function GET() {
   const data = await crawlDomains();
   console.log('[API] Crawler result:', data);
   // 3. 写入 Redis，设置过期
-  await redis.set(REDIS_KEY, JSON.stringify(data), 'EX', EXPIRE_SECONDS);
+  try {
+    await redis.set(REDIS_KEY, JSON.stringify(data), 'EX', EXPIRE_SECONDS);
+    console.log('[API] Redis set success:', REDIS_KEY, data);
+  } catch (e) {
+    console.error('[API] Redis set error:', e);
+  }
+  console.log('[API] Return data:', data.domains[0] || null);
   return NextResponse.json(data.domains[0] || null);
 } 
