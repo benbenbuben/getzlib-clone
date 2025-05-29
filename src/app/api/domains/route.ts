@@ -23,13 +23,8 @@ export async function GET() {
   console.log('[API] No cache, start crawling...');
   const data = await crawlDomains();
   console.log('[API] Crawler result:', data);
-  // 3. 写入 Redis，设置过期
-  try {
-  await redis.set(REDIS_KEY, JSON.stringify(data), 'EX', EXPIRE_SECONDS);
-    console.log('[API] Redis set success:', REDIS_KEY, data);
-  } catch (e) {
-    console.error('[API] Redis set error:', e);
-  }
+  
+  // 3. 返回数据（Redis 的更新已经在 crawlDomains 中处理）
   console.log('[API] Return data:', data.domains[0] || null);
   return NextResponse.json(data.domains[0] || null);
 } 

@@ -1,8 +1,10 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
-import * as fs from 'fs';
-import * as path from 'path';
 import { Domain, DomainData } from '../types/domain';
+import redis from '@/lib/redis';
+
+const REDIS_KEY = 'zlib:domains';
+const EXPIRE_SECONDS = 86400; // 1天
 
 async function crawlDomains(): Promise<DomainData> {
   try {
@@ -74,24 +76,30 @@ async function crawlDomains(): Promise<DomainData> {
       lastUpdated: new Date().toISOString()
     };
     console.log('[CRAWLER] 精准爬取到的域名:', domains);
-    updateLocalDomains(data);
-    console.log('[CRAWLER] updateLocalDomains success');
+
+    // 直接更新 Redis，不再写入本地文件
+    try {
+      await redis.set(REDIS_KEY, JSON.stringify(data), 'EX', EXPIRE_SECONDS);
+      console.log('[CRAWLER] Redis update success');
+    } catch (error) {
+      console.error('[CRAWLER] Redis update error:', error);
+    }
+
     return data;
   } catch (error) {
     console.error('[CRAWLER] 爬虫获取失败:', error);
-    const fallback = getLocalDomains();
-    console.log('[CRAWLER] fallback to local domains:', fallback);
-    return fallback;
-  }
-}
-
-function getLocalDomains(): DomainData {
-  const filePath = path.join(process.cwd(), 'src', 'data', 'domains.json');
-  try {
-    const data = fs.readFileSync(filePath, 'utf-8');
-    return JSON.parse(data);
-  } catch (error) {
-    // 如果文件不存在，返回空数据
+    // 如果爬取失败，尝试从 Redis 获取数据
+    try {
+      const cached = await redis.get(REDIS_KEY);
+      if (cached) {
+        const parsed = JSON.parse(cached);
+        console.log('[CRAWLER] Fallback to Redis cached data');
+        return parsed;
+      }
+    } catch (e) {
+      console.error('[CRAWLER] Redis fallback error:', e);
+    }
+    // 如果 Redis 也没有数据，返回空数据
     return {
       domains: [],
       lastUpdated: new Date().toISOString()
@@ -99,9 +107,4 @@ function getLocalDomains(): DomainData {
   }
 }
 
-function updateLocalDomains(data: DomainData): void {
-  const filePath = path.join(process.cwd(), 'src', 'data', 'domains.json');
-  fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
-}
-
-export { crawlDomains, getLocalDomains, updateLocalDomains }; 
+export { crawlDomains }; 
