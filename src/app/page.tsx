@@ -20,7 +20,7 @@ export default function Home() {
     // 获取最新域名
     const fetchDomain = async () => {
       try {
-        const response = await fetch('/api/domains')
+        const response = await fetch('/api/domains?t=' + Date.now())
         if (!response.ok) throw new Error('Failed to fetch domain')
         const data = await response.json()
         setDomain(data)

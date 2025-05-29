@@ -25,7 +25,7 @@ export async function GET() {
   console.log('[API] Crawler result:', data);
   // 3. 写入 Redis，设置过期
   try {
-    await redis.set(REDIS_KEY, JSON.stringify(data), 'EX', EXPIRE_SECONDS);
+  await redis.set(REDIS_KEY, JSON.stringify(data), 'EX', EXPIRE_SECONDS);
     console.log('[API] Redis set success:', REDIS_KEY, data);
   } catch (e) {
     console.error('[API] Redis set error:', e);
