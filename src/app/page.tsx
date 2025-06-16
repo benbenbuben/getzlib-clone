@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Copy, Menu, Sun, Moon, Globe, Check } from 'lucide-react'
 import Domains from '@/components/domains'
 import { Domain } from '@/types/domain'
+import Script from 'next/script'
 
 export default function Home() {
   const [isDark, setIsDark] = useState(false)
@@ -81,6 +82,12 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background">
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3879688830596920"
+        crossOrigin="anonymous"
+        strategy="afterInteractive"
+      />
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
