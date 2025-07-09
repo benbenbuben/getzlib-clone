@@ -1,0 +1,36 @@
+
+> nextjs-shadcn@0.1.0 dev
+> next dev -H 0.0.0.0
+
+ ⚠ Port 3000 is in use, using available port 3001 instead.
+   ▲ Next.js 15.3.2
+   - Local:        http://localhost:3001
+   - Network:      http://0.0.0.0:3001
+
+ ✓ Starting...
+ ✓ Ready in 2.1s
+ ✓ Compiled /middleware in 311ms (137 modules)
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 2.5s (905 modules)
+ ✓ Compiled in 337ms (373 modules)
+Error loading messages: Error: NEXT_HTTP_ERROR_FALLBACK;404
+    at notFound (../../../src/client/components/not-found.ts:25:16)
+    at eval (src/i18n/request.ts:9:48)
+    at LocaleLayout (src/app/[locale]/layout.tsx:25:32)
+  23 | export function notFound(): never {
+  24 |   // eslint-disable-next-line no-throw-literal
+> 25 |   const error = new Error(DIGEST) as HTTPAccessFallbackError
+     |                ^
+  26 |   ;(error as HTTPAccessFallbackError).digest = DIGEST
+  27 |
+  28 |   throw error {
+  digest: 'NEXT_HTTP_ERROR_FALLBACK;404'
+}
+ GET /en 404 in 4096ms
+ ✓ Compiled in 266ms (532 modules)
+[?25h
+npm notice
+npm notice New major version of npm available! 10.8.2 -> 11.4.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.4.2
+npm notice To update run: npm install -g npm@11.4.2
+npm notice

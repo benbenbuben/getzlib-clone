@@ -1,0 +1,203 @@
+
+> nextjs-shadcn@0.1.0 dev
+> next dev -H 0.0.0.0
+
+ ⚠ Port 3000 is in use, using available port 3001 instead.
+   ▲ Next.js 15.3.2
+   - Local:        http://localhost:3001
+   - Network:      http://0.0.0.0:3001
+
+ ✓ Starting...
+ ✓ Ready in 2.9s
+ ✓ Compiled /middleware in 282ms
+ ✓ Compiled (137 modules)
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 3.2s (905 modules)
+ ✓ Compiled in 578ms (373 modules)
+ GET /en 200 in 4910ms
+ GET /en 200 in 100ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 798ms (895 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 931ms
+ GET /en/api/domains?t=1752034372476 404 in 40ms
+ GET /zh 200 in 236ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 56ms
+ GET /zh/api/domains?t=1752034388843 404 in 77ms
+ ○ Compiling /[locale]/blog/[slug] ...
+ ✓ Compiled /[locale]/blog/[slug] in 1459ms (975 modules)
+ GET /zh/blog/how-to-access-z-library-safely 200 in 2967ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 52ms
+ ○ Compiling /[locale]/blog ...
+ ✓ Compiled /[locale]/blog in 589ms (981 modules)
+ GET /zh/blog 200 in 1721ms
+ GET /zh 200 in 146ms
+ GET /zh/api/domains?t=1752034422041 404 in 115ms
+ GET /en 200 in 96ms
+ GET /en/api/domains?t=1752034432762 404 in 90ms
+ GET /ja 200 in 87ms
+ GET /ja/api/domains?t=1752034435164 404 in 64ms
+ GET /hi 200 in 81ms
+ GET /hi/api/domains?t=1752034445070 404 in 51ms
+ GET /en 200 in 76ms
+ GET /en/api/domains?t=1752034450957 404 in 42ms
+ GET /en 200 in 90ms
+ GET /en/api/domains?t=1752034485266 404 in 165ms
+ GET /en 200 in 93ms
+ GET /en/api/domains?t=1752034493657 404 in 39ms
+ GET /en/blog 200 in 117ms
+ GET /en 200 in 86ms
+ GET /en/api/domains?t=1752034506994 404 in 82ms
+ GET /en 200 in 151ms
+ GET /en/api/domains?t=1752034982773 404 in 69ms
+   Reload env: .env.local
+ ✓ Compiled in 727ms (1114 modules)
+ GET /en 200 in 228ms
+ ✓ Compiled /_not-found in 348ms (981 modules)
+ GET /en/api/domains?t=1752035136910 404 in 480ms
+ ✓ Compiled in 3.5s (1404 modules)
+[CRAWLER] Start crawling at 2025-07-09T04:26:45.233Z
+ GET /en 200 in 483ms
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:26:45.558Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:26:45.560Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:26:45.562Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:26:45.564Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:26:45.564Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+ ✓ Compiled /_not-found in 394ms (1394 modules)
+[CRAWLER] Start crawling at 2025-07-09T04:26:46.252Z
+ GET /en/api/domains?t=1752035205374 404 in 758ms
+ GET /en 200 in 108ms
+[CRAWLER] Start crawling at 2025-07-09T04:26:46.502Z
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:26:46.606Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:26:46.607Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:26:46.608Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:26:46.609Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:26:46.610Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+ GET /en/api/domains?t=1752035206508 404 in 39ms
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:26:46.787Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:26:46.788Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:26:46.789Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:26:46.790Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:26:46.790Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+[?25h
+npm notice
+npm notice New major version of npm available! 10.8.2 -> 11.4.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.4.2
+npm notice To update run: npm install -g npm@11.4.2
+npm notice

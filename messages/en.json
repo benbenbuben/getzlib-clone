@@ -1,0 +1,87 @@
+{
+  "title": "Z-Library Latest Links | Daily Updates | Free E-book Downloads",
+  "description": "Find the latest working Z-Library links, updated daily, with complete access guides and tutorials. Download academic literature and e-books for free.",
+  "keywords": "Z-Library, Z-Library links, free e-books, academic literature, e-book downloads, Z-Lib, Zlibrary, latest links, access guide, tutorials",
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "hero": {
+    "title": "Get Z-Library",
+    "subtitle": "Find the latest working links to Z-Library"
+  },
+  "sections": {
+    "latestDomains": "Latest Working Domains",
+    "magicEmail": "Magic Email",
+    "faq": "Frequently Asked Questions",
+    "blog": "Latest Articles",
+    "about": "About Us"
+  },
+  "status": {
+    "loading": "Loading domain...",
+    "error": "Failed to load domain",
+    "noData": "No domain found.",
+    "lastChecked": "Last checked:",
+    "online": "Online"
+  },
+  "actions": {
+    "copy": "Copy to clipboard",
+    "copied": "Copied!",
+    "visitSite": "Visit Site",
+    "readMore": "Read More"
+  },
+  "magicEmail": {
+    "description": "Send any message to this email and you will receive the latest Z-Library access link within 3-5 minutes."
+  },
+  "faq": {
+    "items": [
+      {
+        "question": "What is Z-Library?",
+        "answer": "Z-Library is a shadow library project for file-sharing access to scholarly journal articles, academic texts, and general-interest books. As one of the world's largest online libraries, Z-Library provides access to millions of books and articles."
+      },
+      {
+        "question": "Is Z-Library legal?",
+        "answer": "The legal status of Z-Library varies by jurisdiction. While Z-Library operates as a resource for educational materials, many countries have copyright laws that may restrict some of Z-Library's activities. We recommend checking your local laws and regulations before using Z-Library services."
+      },
+      {
+        "question": "Why do Z-Library domains change?",
+        "answer": "Z-Library domains change frequently due to various legal challenges and copyright enforcement actions. As a shadow library, Z-Library adapts by changing domain names to maintain service availability. We help track the latest working Z-Library domains."
+      },
+      {
+        "question": "How can I access Z-Library when official domains are blocked?",
+        "answer": "When official Z-Library domains are blocked, you can use alternative access methods such as the Z-Library Tor network, Z-Library mirror sites, or Z-Library's personal domains. Our website provides up-to-date information on the latest Z-Library access points."
+      },
+      {
+        "question": "Do I need an account to use Z-Library?",
+        "answer": "While Z-Library allows basic access without registration, creating a free Z-Library account provides benefits such as increased download limits, personal Z-Library domain, and better Z-Library service features. Z-Library also offers premium accounts with additional privileges."
+      },
+      {
+        "question": "Is it safe to use Z-Library?",
+        "answer": "Z-Library itself focuses on providing access to books and articles, but as with any online service, users should practice standard internet safety. When accessing Z-Library, use trusted links (like those we verify), avoid suspicious download prompts, and consider using a VPN for additional privacy when visiting Z-Library sites."
+      },
+      {
+        "question": "What's the difference between Z-Library and other digital libraries?",
+        "answer": "Z-Library distinguishes itself from other digital libraries by its vast collection size (millions of books and articles), free access model, and resilient infrastructure. Unlike many official digital libraries, Z-Library operates independently of traditional publishing constraints, allowing it to provide broader access to materials."
+      },
+      {
+        "question": "What file formats does Z-Library support?",
+        "answer": "Z-Library supports multiple e-book and document formats, including PDF, EPUB, MOBI, AZW, AZW3, FB2, and more. This makes Z-Library compatible with virtually all e-readers, tablets, and computers, providing flexibility for how you access and read Z-Library content."
+      }
+    ]
+  },
+  "footer": {
+    "about": "About",
+    "aboutText": "We help users find the latest working Z-Library domains.",
+    "languages": "Available Languages",
+    "copyright": "© 2025 Z-Library Links. All rights reserved."
+  },
+  "languages": {
+    "en": "English",
+    "zh": "中文",
+    "ja": "日本語",
+    "hi": "हिन्दी"
+  }
+}

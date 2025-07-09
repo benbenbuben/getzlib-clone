@@ -1,0 +1,2261 @@
+
+> nextjs-shadcn@0.1.0 dev
+> next dev -H 0.0.0.0
+
+ ⚠ Port 3000 is in use, using available port 3001 instead.
+   ▲ Next.js 15.3.2
+   - Local:        http://localhost:3001
+   - Network:      http://0.0.0.0:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 2.7s
+ ✓ Compiled /middleware in 248ms
+ ✓ Compiled (137 modules)
+ ✓ Compiled in 164ms (137 modules)
+ ○ Compiling /api/domains ...
+ ✓ Compiled /api/domains in 2.7s (777 modules)
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:26:46.787Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:26:46.788Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:26:46.789Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:26:46.790Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:26:46.790Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:26:46.791Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:26:46.787Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:26:46.788Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:26:46.789Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:26:46.790Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:26:46.790Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:26:46.791Z'
+}
+ GET /api/domains 200 in 3146ms
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 2.3s (1337 modules)
+ ✓ Compiled in 105ms (374 modules)
+[CRAWLER] Start crawling at 2025-07-09T04:28:20.324Z
+[CRAWLER] Start crawling at 2025-07-09T04:28:20.608Z
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:28:20.566Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:28:20.566Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:28:20.567Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:28:20.568Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:28:20.568Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+ GET /en 200 in 3693ms
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:28:20.969Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:28:20.970Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:28:20.971Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:28:20.972Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:28:20.973Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:28:20.969Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:28:20.970Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:28:20.971Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:28:20.972Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:28:20.973Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:28:20.974Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:28:20.969Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:28:20.970Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:28:20.971Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:28:20.972Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:28:20.973Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:28:20.974Z'
+}
+ GET /api/domains 200 in 86ms
+ GET /en 200 in 166ms
+[CRAWLER] Start crawling at 2025-07-09T04:31:51.231Z
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:31:51.521Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:31:51.522Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:31:51.523Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:31:51.524Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:31:51.525Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+ GET /en 200 in 165ms
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:31:51.521Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:31:51.522Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:31:51.523Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:31:51.524Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:31:51.525Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:31:51.526Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:31:51.521Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:31:51.522Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:31:51.523Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:31:51.524Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:31:51.525Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:31:51.526Z'
+}
+ GET /api/domains?t=1752035544685 200 in 38ms
+[CRAWLER] Start crawling at 2025-07-09T04:32:25.510Z
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:32:25.804Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:32:25.805Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:32:25.807Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:32:25.808Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:32:25.809Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+ GET /ja 200 in 93ms
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:32:25.804Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:32:25.805Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:32:25.807Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:32:25.808Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:32:25.809Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:32:25.810Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:32:25.804Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:32:25.805Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:32:25.807Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:32:25.808Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:32:25.809Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:32:25.810Z'
+}
+ GET /api/domains?t=1752035551354 200 in 13ms
+[CRAWLER] Start crawling at 2025-07-09T04:32:31.967Z
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:32:32.197Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:32:32.197Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:32:32.198Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:32:32.199Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:32:32.199Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+ GET /hi 200 in 91ms
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:32:32.197Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:32:32.197Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:32:32.198Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:32:32.199Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:32:32.199Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:32:32.200Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:32:32.197Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:32:32.197Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:32:32.198Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:32:32.199Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:32:32.199Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:32:32.200Z'
+}
+ GET /api/domains?t=1752035559190 200 in 10ms
+[CRAWLER] Start crawling at 2025-07-09T04:32:39.782Z
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:32:40.082Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:32:40.083Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:32:40.084Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:32:40.085Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:32:40.086Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+ GET /en 200 in 96ms
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:32:40.082Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:32:40.083Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:32:40.084Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:32:40.085Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:32:40.086Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:32:40.087Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:32:40.082Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:32:40.083Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:32:40.084Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:32:40.085Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:32:40.086Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:32:40.087Z'
+}
+ GET /api/domains?t=1752035561422 200 in 12ms
+[CRAWLER] Start crawling at 2025-07-09T04:32:42.043Z
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:32:42.314Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:32:42.315Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:32:42.316Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:32:42.317Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:32:42.318Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+ ✓ Compiled in 434ms (374 modules)
+ GET /en 200 in 52ms
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:32:42.314Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:32:42.315Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:32:42.316Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:32:42.317Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:32:42.318Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:32:42.319Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:32:42.314Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:32:42.315Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:32:42.316Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:32:42.317Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:32:42.318Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:32:42.319Z'
+}
+ GET /api/domains?t=1752035648833 200 in 27ms
+[CRAWLER] Start crawling at 2025-07-09T04:34:10.110Z
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:34:10.365Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:34:10.365Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:34:10.366Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:34:10.367Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:34:10.368Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+ ✓ Compiled in 871ms (1339 modules)
+[CRAWLER] Start crawling at 2025-07-09T04:34:43.963Z
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:34:10.365Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:34:10.365Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:34:10.366Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:34:10.367Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:34:10.368Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:34:10.369Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:10.365Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:10.365Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:10.366Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:10.367Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:10.368Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:34:10.369Z'
+}
+ GET /api/domains?t=1752035683623 200 in 27ms
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:34:10.365Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:34:10.365Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:34:10.366Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:34:10.367Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:34:10.368Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:34:10.369Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:10.365Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:10.365Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:10.366Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:10.367Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:10.368Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:34:10.369Z'
+}
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:34:10.365Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:34:10.365Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:34:10.366Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:34:10.367Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:34:10.368Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:34:10.369Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:10.365Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:10.365Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:10.366Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:10.367Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:10.368Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:34:10.369Z'
+}
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:34:10.365Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:34:10.365Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:34:10.366Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:34:10.367Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:34:10.368Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:34:10.369Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:10.365Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:10.365Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:10.366Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:10.367Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:10.368Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:34:10.369Z'
+}
+ GET /api/domains?t=1752035683624 200 in 38ms
+ GET /api/domains?t=1752035683651 200 in 36ms
+ GET /api/domains?t=1752035683652 200 in 36ms
+ GET /en 200 in 516ms
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:34:44.249Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:34:44.250Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:34:44.251Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:34:44.252Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:34:44.253Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:34:44.249Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:34:44.250Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:34:44.251Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:34:44.252Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:34:44.253Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:34:44.254Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:44.249Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:44.250Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:44.251Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:44.252Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:44.253Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:34:44.254Z'
+}
+ GET /api/domains?t=1752035684163 200 in 7ms
+[CRAWLER] Start crawling at 2025-07-09T04:34:44.790Z
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:34:45.218Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:34:45.219Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:34:45.220Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:34:45.221Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:34:45.221Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+ ✓ Compiled in 527ms (1339 modules)
+ ✓ Compiled in 1ms (964 modules)
+ ✓ Compiled in 0ms (964 modules)
+ ✓ Compiled in 0ms (964 modules)
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:34:45.218Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:34:45.219Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:34:45.220Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:34:45.221Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:34:45.221Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:34:45.222Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:45.218Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:45.219Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:45.220Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:45.221Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:45.221Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:34:45.222Z'
+}
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:34:45.218Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:34:45.219Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:34:45.220Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:34:45.221Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:34:45.221Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:34:45.222Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:45.218Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:45.219Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:45.220Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:45.221Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:34:45.221Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:34:45.222Z'
+}
+ GET /api/domains?t=1752035710436 200 in 1059ms
+ GET /api/domains?t=1752035710438 200 in 1057ms
+[CRAWLER] Start crawling at 2025-07-09T04:35:11.855Z
+ ⨯ Error: useTheme must be used within a ThemeProvider
+    at useTheme (src/components/theme-provider.tsx:59:10)
+    at ClientHome (src/app/[locale]/client-home.tsx:21:41)
+  57 |   const context = useContext(ThemeContext)
+  58 |   if (context === undefined) {
+> 59 |     throw new Error('useTheme must be used within a ThemeProvider')
+     |          ^
+  60 |   }
+  61 |   return context
+  62 | } {
+  digest: '4026782653'
+}
+ GET /en 500 in 1565ms
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:35:12.458Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:35:12.460Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:35:12.463Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:35:12.464Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:35:12.465Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+ GET /favicon.ico 404 in 85ms
+[CRAWLER] Start crawling at 2025-07-09T04:35:13.426Z
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:35:13.893Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:35:13.894Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:35:13.895Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:35:13.896Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:35:13.897Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+ ✓ Compiled in 1412ms (1339 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[CRAWLER] Start crawling at 2025-07-09T04:35:47.376Z
+ ⨯ Error: useTheme must be used within a ThemeProvider
+    at useTheme (src/components/theme-provider.tsx:59:10)
+    at ClientHome (src/app/[locale]/client-home.tsx:21:41)
+  57 |   const context = useContext(ThemeContext)
+  58 |   if (context === undefined) {
+> 59 |     throw new Error('useTheme must be used within a ThemeProvider')
+     |          ^
+  60 |   }
+  61 |   return context
+  62 | } {
+  digest: '4026782653'
+}
+ GET /en 500 in 541ms
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:35:47.728Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:35:47.729Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:35:47.730Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:35:47.731Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:35:47.732Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+[CRAWLER] Start crawling at 2025-07-09T04:35:48.422Z
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:35:48.731Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:35:48.732Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:35:48.734Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:35:48.735Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:35:48.735Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+ ✓ Compiled in 1029ms (1340 modules)
+[CRAWLER] Start crawling at 2025-07-09T04:36:11.033Z
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ Error: useTheme must be used within a ThemeProvider
+    at useTheme (src/components/theme-provider.tsx:59:10)
+    at ClientHome (src/app/[locale]/client-home.tsx:21:41)
+  57 |   const context = useContext(ThemeContext)
+  58 |   if (context === undefined) {
+> 59 |     throw new Error('useTheme must be used within a ThemeProvider')
+     |          ^
+  60 |   }
+  61 |   return context
+  62 | } {
+  digest: '2255281829'
+}
+ GET /en 500 in 779ms
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:11.384Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:11.385Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:11.386Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:11.387Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:11.388Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+[CRAWLER] Start crawling at 2025-07-09T04:36:12.235Z
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:12.559Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:12.560Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:12.561Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:12.562Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:12.562Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+ ✓ Compiled in 619ms (1322 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[CRAWLER] Start crawling at 2025-07-09T04:36:22.415Z
+ ⨯ Error: useTheme must be used within a ThemeProvider
+    at useTheme (src/components/theme-provider.tsx:59:10)
+    at ClientHome (src/app/[locale]/client-home.tsx:21:41)
+  57 |   const context = useContext(ThemeContext)
+  58 |   if (context === undefined) {
+> 59 |     throw new Error('useTheme must be used within a ThemeProvider')
+     |          ^
+  60 |   }
+  61 |   return context
+  62 | } {
+  digest: '3569081270'
+}
+ GET /en 500 in 566ms
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:22.815Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:22.816Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:22.817Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:22.819Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:22.828Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+[CRAWLER] Start crawling at 2025-07-09T04:36:23.843Z
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:24.135Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:24.136Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:24.137Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:24.138Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:24.138Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+ ✓ Compiled in 139ms (375 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ Error: useTheme must be used within a ThemeProvider
+    at useTheme (src/components/theme-provider.tsx:59:10)
+    at ClientHome (src/app/[locale]/client-home.tsx:21:41)
+  57 |   const context = useContext(ThemeContext)
+  58 |   if (context === undefined) {
+> 59 |     throw new Error('useTheme must be used within a ThemeProvider')
+     |          ^
+  60 |   }
+  61 |   return context
+  62 | } {
+  digest: '3569081270'
+}
+ GET /en 500 in 122ms
+[CRAWLER] Start crawling at 2025-07-09T04:36:39.226Z
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:39.483Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:39.484Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:39.485Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:39.486Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:39.486Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 823ms (1322 modules)
+[CRAWLER] Start crawling at 2025-07-09T04:36:55.097Z
+ GET /en 200 in 517ms
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:55.455Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:55.455Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:55.456Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:55.456Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:55.456Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+ ○ Compiling /api/domains ...
+[CRAWLER] Start crawling at 2025-07-09T04:36:56.450Z
+ ✓ Compiled /api/domains in 653ms (965 modules)
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:56.796Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:56.797Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:56.798Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:56.799Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:36:56.799Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:36:56.796Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:36:56.797Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:36:56.798Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:36:56.799Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:36:56.799Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:36:56.801Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:36:56.796Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:36:56.797Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:36:56.798Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:36:56.799Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:36:56.799Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:36:56.801Z'
+}
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:36:56.796Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:36:56.797Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:36:56.798Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:36:56.799Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:36:56.799Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:36:56.801Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:36:56.796Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:36:56.797Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:36:56.798Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:36:56.799Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:36:56.799Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:36:56.801Z'
+}
+ GET /api/domains?t=1752035816143 200 in 749ms
+ GET /api/domains?t=1752035816144 200 in 748ms
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:36:56.796Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:36:56.797Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:36:56.798Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:36:56.799Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:36:56.799Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:36:56.801Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:36:56.796Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:36:56.797Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:36:56.798Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:36:56.799Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:36:56.799Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:36:56.801Z'
+}
+ GET /api/domains?t=1752035816056 200 in 905ms
+ ✓ Compiled in 1677ms (1344 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[CRAWLER] Start crawling at 2025-07-09T04:37:06.982Z
+ GET /en 200 in 646ms
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:37:07.347Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:37:07.348Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:37:07.349Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:37:07.350Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:37:07.351Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+[CRAWLER] Start crawling at 2025-07-09T04:37:07.912Z
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:37:07.347Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:37:07.348Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:37:07.349Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:37:07.350Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:37:07.351Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:37:07.352Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:07.347Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:07.348Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:07.349Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:07.350Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:07.351Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:37:07.352Z'
+}
+ GET /api/domains?t=1752035827941 200 in 26ms
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:37:07.347Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:37:07.348Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:37:07.349Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:37:07.350Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:37:07.351Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:37:07.352Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:07.347Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:07.348Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:07.349Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:07.350Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:07.351Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:37:07.352Z'
+}
+ GET /api/domains?t=1752035828010 200 in 18ms
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:37:07.347Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:37:07.348Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:37:07.349Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:37:07.350Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:37:07.351Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:37:07.352Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:07.347Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:07.348Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:07.349Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:07.350Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:07.351Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:37:07.352Z'
+}
+ GET /api/domains?t=1752035828012 200 in 26ms
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:37:08.264Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:37:08.265Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:37:08.266Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:37:08.266Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:37:08.267Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+ ✓ Compiled in 625ms (1341 modules)
+[CRAWLER] Start crawling at 2025-07-09T04:37:47.190Z
+ GET /en 200 in 443ms
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:37:08.264Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:37:08.265Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:37:08.266Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:37:08.266Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:37:08.267Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:37:08.273Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:08.264Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:08.265Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:08.266Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:08.266Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:08.267Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:37:08.273Z'
+}
+ GET /api/domains?t=1752035867328 200 in 32ms
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:37:08.264Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:37:08.265Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:37:08.266Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:37:08.266Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:37:08.267Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:37:08.273Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:08.264Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:08.265Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:08.266Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:08.266Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:08.267Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:37:08.273Z'
+}
+ GET /api/domains?t=1752035867329 200 in 40ms
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:37:47.468Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:37:47.469Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:37:47.471Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:37:47.471Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:37:47.472Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+[CRAWLER] Start crawling at 2025-07-09T04:37:48.080Z
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:37:48.340Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:37:48.340Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:37:48.341Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:37:48.342Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:37:48.342Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+ GET /en 200 in 195ms
+[API] Redis cached: {"domains":[{"url":"https://z-lib.su","status":"active","lastChecked":"2025-07-09T04:37:48.340Z","source":"crawler","note":"1，第三方"},{"url":"https://zh.zlib.fi/","status":"active","lastChecked":"2025-07-09T04:37:48.340Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-library.sk/","status":"active","lastChecked":"2025-07-09T04:37:48.341Z","source":"crawler","note":"1，官方地址官方地址"},{"url":"https://z-lib.fm/","status":"active","lastChecked":"2025-07-09T04:37:48.342Z","source":"crawler","note":"1，官方地址"},{"url":"https://z-library.sk","status":"active","lastChecked":"2025-07-09T04:37:48.342Z","source":"crawler","note":"1，官方地址"}],"lastUpdated":"2025-07-09T04:37:48.343Z"}
+[API] Redis parsed: {
+  domains: [
+    {
+      url: 'https://z-lib.su',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:48.340Z',
+      source: 'crawler',
+      note: '1，第三方'
+    },
+    {
+      url: 'https://zh.zlib.fi/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:48.340Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-library.sk/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:48.341Z',
+      source: 'crawler',
+      note: '1，官方地址官方地址'
+    },
+    {
+      url: 'https://z-lib.fm/',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:48.342Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    },
+    {
+      url: 'https://z-library.sk',
+      status: 'active',
+      lastChecked: '2025-07-09T04:37:48.342Z',
+      source: 'crawler',
+      note: '1，官方地址'
+    }
+  ],
+  lastUpdated: '2025-07-09T04:37:48.343Z'
+}
+ GET /api/domains?t=1752036261402 200 in 17ms
+[CRAWLER] Start crawling at 2025-07-09T04:44:22.237Z
+[CRAWLER] h2:contains("最新官网地址") found: 1
+[CRAWLER] Add domain: https://z-lib.su label: 1，第三方：
+[CRAWLER] Add domain: https://zh.zlib.fi/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-library.sk/ label: 1，官方地址：官方地址
+[CRAWLER] Add domain: https://z-lib.fm/ label: 1，官方地址：
+[CRAWLER] Add domain: https://z-library.sk label: 1，官方地址：
+[CRAWLER] 精准爬取到的域名: [
+  {
+    url: 'https://z-lib.su',
+    status: 'active',
+    lastChecked: '2025-07-09T04:44:22.524Z',
+    source: 'crawler',
+    note: '1，第三方'
+  },
+  {
+    url: 'https://zh.zlib.fi/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:44:22.528Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-library.sk/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:44:22.529Z',
+    source: 'crawler',
+    note: '1，官方地址官方地址'
+  },
+  {
+    url: 'https://z-lib.fm/',
+    status: 'active',
+    lastChecked: '2025-07-09T04:44:22.531Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  },
+  {
+    url: 'https://z-library.sk',
+    status: 'active',
+    lastChecked: '2025-07-09T04:44:22.532Z',
+    source: 'crawler',
+    note: '1，官方地址'
+  }
+]
+[CRAWLER] Redis update success
+[?25h
+npm notice
+npm notice New major version of npm available! 10.8.2 -> 11.4.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.4.2
+npm notice To update run: npm install -g npm@11.4.2
+npm notice

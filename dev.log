@@ -1,0 +1,24 @@
+
+> nextjs-shadcn@0.1.0 dev
+> next dev -H 0.0.0.0
+
+   ▲ Next.js 15.3.2
+   - Local:        http://localhost:3000
+   - Network:      http://0.0.0.0:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.3s
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 1109ms (137 modules)
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 7.1s (923 modules)
+ ✓ Compiled in 521ms (373 modules)
+ GET /en 404 in 8740ms
+ HEAD /en 404 in 68ms
+ GET /en 404 in 62ms
+[?25h
+npm notice
+npm notice New major version of npm available! 10.8.2 -> 11.4.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.4.2
+npm notice To update run: npm install -g npm@11.4.2
+npm notice

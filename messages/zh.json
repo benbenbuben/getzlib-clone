@@ -1,0 +1,87 @@
+{
+  "title": "Z-Library 最新链接 | 每日更新 | 免费电子书下载",
+  "description": "查找最新可用的 Z-Library 链接，每日更新，提供完整的访问指南和教程。免费下载学术文献和电子书。",
+  "keywords": "Z-Library, Z-Library 链接, 免费电子书, 学术文献, 电子书下载, Z-Lib, Zlibrary, 最新链接, 访问指南, 教程",
+  "nav": {
+    "home": "首页",
+    "blog": "博客",
+    "about": "关于",
+    "contact": "联系",
+    "language": "语言"
+  },
+  "hero": {
+    "title": "获取 Z-Library",
+    "subtitle": "查找最新可用的 Z-Library 链接"
+  },
+  "sections": {
+    "latestDomains": "最新可用域名",
+    "magicEmail": "魔法邮箱",
+    "faq": "常见问题",
+    "blog": "最新文章",
+    "about": "关于我们"
+  },
+  "status": {
+    "loading": "正在加载域名...",
+    "error": "加载域名失败",
+    "noData": "未找到域名。",
+    "lastChecked": "最后检查时间：",
+    "online": "在线"
+  },
+  "actions": {
+    "copy": "复制到剪贴板",
+    "copied": "已复制！",
+    "visitSite": "访问网站",
+    "readMore": "阅读更多"
+  },
+  "magicEmail": {
+    "description": "向此邮箱发送任意消息，您将在 3-5 分钟内收到最新的 Z-Library 访问链接。"
+  },
+  "faq": {
+    "items": [
+      {
+        "question": "什么是 Z-Library？",
+        "answer": "Z-Library 是一个影子图书馆项目，用于文件共享访问学术期刊文章、学术文本和一般兴趣书籍。作为世界上最大的在线图书馆之一，Z-Library 提供数百万本书籍和文章的访问。"
+      },
+      {
+        "question": "Z-Library 合法吗？",
+        "answer": "Z-Library 的法律地位因司法管辖区而异。虽然 Z-Library 作为教育材料资源运营，但许多国家的版权法可能限制 Z-Library 的某些活动。我们建议在使用 Z-Library 服务之前检查您当地的法律法规。"
+      },
+      {
+        "question": "为什么 Z-Library 域名会变更？",
+        "answer": "由于各种法律挑战和版权执法行动，Z-Library 域名经常变更。作为影子图书馆，Z-Library 通过更改域名来适应并维持服务可用性。我们帮助跟踪最新可用的 Z-Library 域名。"
+      },
+      {
+        "question": "当官方域名被阻止时，如何访问 Z-Library？",
+        "answer": "当官方 Z-Library 域名被阻止时，您可以使用替代访问方法，如 Z-Library Tor 网络、Z-Library 镜像站点或 Z-Library 的个人域名。我们的网站提供关于最新 Z-Library 访问点的最新信息。"
+      },
+      {
+        "question": "使用 Z-Library 需要账户吗？",
+        "answer": "虽然 Z-Library 允许无需注册即可基本访问，但创建免费 Z-Library 账户可提供增加下载限制、个人 Z-Library 域名和更好的 Z-Library 服务功能等好处。Z-Library 还提供具有额外特权的高级账户。"
+      },
+      {
+        "question": "使用 Z-Library 安全吗？",
+        "answer": "Z-Library 本身专注于提供书籍和文章访问，但与任何在线服务一样，用户应该实践标准的互联网安全。访问 Z-Library 时，使用可信链接（如我们验证的链接），避免可疑的下载提示，并考虑使用 VPN 以在访问 Z-Library 站点时获得额外隐私。"
+      },
+      {
+        "question": "Z-Library 与其他数字图书馆有什么区别？",
+        "answer": "Z-Library 通过其庞大的收藏规模（数百万本书籍和文章）、免费访问模式和弹性基础设施与其他数字图书馆区别开来。与许多官方数字图书馆不同，Z-Library 独立于传统出版约束运营，允许其提供更广泛的材料访问。"
+      },
+      {
+        "question": "Z-Library 支持哪些文件格式？",
+        "answer": "Z-Library 支持多种电子书和文档格式，包括 PDF、EPUB、MOBI、AZW、AZW3、FB2 等。这使得 Z-Library 与几乎所有电子阅读器、平板电脑和计算机兼容，为您访问和阅读 Z-Library 内容提供了灵活性。"
+      }
+    ]
+  },
+  "footer": {
+    "about": "关于",
+    "aboutText": "我们帮助用户找到最新可用的 Z-Library 域名。",
+    "languages": "可用语言",
+    "copyright": "© 2025 Z-Library Links. 保留所有权利。"
+  },
+  "languages": {
+    "en": "English",
+    "zh": "中文",
+    "ja": "日本語",
+    "hi": "हिन्दी"
+  }
+}

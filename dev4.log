@@ -1,0 +1,26 @@
+
+> nextjs-shadcn@0.1.0 dev
+> next dev -H 0.0.0.0
+
+ ⚠ Port 3000 is in use, using available port 3001 instead.
+   ▲ Next.js 15.3.2
+   - Local:        http://localhost:3001
+   - Network:      http://0.0.0.0:3001
+
+ ✓ Starting...
+ ✓ Ready in 2.2s
+ ✓ Compiled /middleware in 263ms (137 modules)
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 2.8s (905 modules)
+ ✓ Compiled in 353ms (373 modules)
+Error loading messages: [Error: No locale was returned from `getRequestConfig`.
+
+See https://next-intl.dev/docs/usage/configuration#i18n-request]
+ GET /en 404 in 3859ms
+ ✓ Compiled in 516ms (905 modules)
+[?25h
+npm notice
+npm notice New major version of npm available! 10.8.2 -> 11.4.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.4.2
+npm notice To update run: npm install -g npm@11.4.2
+npm notice

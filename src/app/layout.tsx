@@ -4,6 +4,9 @@ import "./globals.css";
 import ClientBody from "./ClientBody";
 import Script from 'next/script';
 
+// 导入调度器以初始化定时任务
+import '../scripts/scheduler';
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -15,9 +18,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Z-Library 最新链接 | 每日更新 | 免费电子书下载",
-  description: "查找最新可用的 Z-Library 链接，每日更新，提供完整的访问指南和教程。免费下载学术文献和电子书。",
-  keywords: "Z-Library, Z-Library 链接, 免费电子书, 学术文献, 电子书下载, Z-Lib, Zlibrary, 最新链接, 访问指南, 教程",
+  title: "Z-Library Latest Links | Daily Updates | Free E-book Downloads",
+  description: "Find the latest working Z-Library links, updated daily, with complete access guides and tutorials. Download academic literature and e-books for free.",
+  keywords: "Z-Library, Z-Library links, free e-books, academic literature, e-book downloads, Z-Lib, Zlibrary, latest links, access guide, tutorials",
   icons: {
     icon: "/favicon.svg",
   },
@@ -32,10 +35,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.svg" />
-        <link rel="canonical" href="https://www.aiforai.xyz/" />
         {/* Google Analytics 官方推荐用法 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-CHMFSLL64M"
@@ -63,7 +65,7 @@ export default function RootLayout({
           `,
         }} />
       </head>
-      <body suppressHydrationWarning className="antialiased">
+      <body suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe src="https://www.googletagmanager.com/ns.html?id=GT-M3S236PS" height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe>

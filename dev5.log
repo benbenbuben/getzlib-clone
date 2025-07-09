@@ -1,0 +1,93 @@
+
+> nextjs-shadcn@0.1.0 dev
+> next dev -H 0.0.0.0
+
+ ⚠ Port 3000 is in use, using available port 3001 instead.
+   ▲ Next.js 15.3.2
+   - Local:        http://localhost:3001
+   - Network:      http://0.0.0.0:3001
+
+ ✓ Starting...
+ ✓ Ready in 2.1s
+ ✓ Compiled /middleware in 125ms
+ ✓ Compiled (137 modules)
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 2.4s (905 modules)
+ ✓ Compiled in 409ms (373 modules)
+ ⨯ [Error: No locale was returned from `getRequestConfig`.
+
+See https://next-intl.dev/docs/usage/configuration#i18n-request] {
+  digest: '2800999344'
+}
+ HEAD /en 500 in 3547ms
+ ⚠ Found a change in next.config.js. Restarting the server to apply the changes...
+   ▲ Next.js 15.3.2
+   - Local:        http://localhost:3001
+   - Network:      http://0.0.0.0:3001
+
+ ✓ Starting...
+ ✓ Ready in 2.2s
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 723ms (137 modules)
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 5s (918 modules)
+ ✓ Compiled in 352ms (373 modules)
+ ⨯ [Error: Couldn't find next-intl config file. Please follow the instructions at https://next-intl.dev/docs/getting-started/app-router] {
+  digest: '1940759697'
+}
+ HEAD /en 500 in 6667ms
+ ⚠ Found a change in next.config.js. Restarting the server to apply the changes...
+   ▲ Next.js 15.3.2
+   - Local:        http://localhost:3001
+   - Network:      http://0.0.0.0:3001
+
+ ✓ Starting...
+ ✓ Ready in 2.2s
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 1662ms (137 modules)
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 6.8s (923 modules)
+ ✓ Compiled in 717ms (373 modules)
+Error: INVALID_MESSAGE: Message at `faq.items` resolved to an array, but only strings are supported. See https://next-intl.dev/docs/usage/messages#arrays-of-messages
+    at ClientHome (src/app/[locale]/client-home.tsx:56:19)
+  54 |   }
+  55 |
+> 56 |   const faqData = (t('faq.items') as any) as Array<{question: string; answer: string}>
+     |                   ^
+  57 |
+  58 |   return (
+  59 |     <div className="min-h-screen bg-background"> {
+  code: 'INVALID_MESSAGE',
+  originalMessage: 'Message at `faq.items` resolved to an array, but only strings are supported. See https://next-intl.dev/docs/usage/messages#arrays-of-messages'
+}
+ ⨯ TypeError: faqData.map is not a function
+    at ClientHome (src/app/[locale]/client-home.tsx:250:21)
+  248 |           <h2 className="text-xl md:text-2xl font-bold mb-4 md:mb-8">{t('sections.faq')}</h2>
+  249 |           <div className="space-y-4 md:space-y-6">
+> 250 |             {faqData.map((faq) => (
+      |                     ^
+  251 |               <Card key={faq.question} className="p-4 md:p-8">
+  252 |                 <CardHeader className="p-0 mb-3 md:mb-4">
+  253 |                   <CardTitle className="text-lg md:text-xl font-semibold">{faq.question}</CardTitle> {
+  digest: '3588911297'
+}
+ GET /en 500 in 8781ms
+ ✓ Compiled in 825ms (905 modules)
+ GET /en 200 in 351ms
+ GET /en 200 in 46ms
+ GET /zh 200 in 195ms
+ GET /ja 200 in 69ms
+ GET /hi 200 in 67ms
+ ○ Compiling /[locale]/blog ...
+ ✓ Compiled /[locale]/blog in 1155ms (967 modules)
+ GET /en/blog 200 in 2590ms
+ ✓ Compiled /[locale]/about in 339ms (972 modules)
+ GET /en/about 200 in 1701ms
+ ✓ Compiled /[locale]/contact in 404ms (979 modules)
+ GET /en/contact 200 in 1568ms
+[?25h
+npm notice
+npm notice New major version of npm available! 10.8.2 -> 11.4.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.4.2
+npm notice To update run: npm install -g npm@11.4.2
+npm notice

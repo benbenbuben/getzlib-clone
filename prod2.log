@@ -1,0 +1,70 @@
+
+> nextjs-shadcn@0.1.0 start
+> next start
+
+   ▲ Next.js 15.3.2
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.40.34:3000
+
+ ✓ Starting...
+ ✓ Ready in 460ms
+Error loading messages: Error: NEXT_HTTP_ERROR_FALLBACK;404
+    at o (.next/server/app/page.js:1:4059)
+    at <unknown> (.next/server/app/[locale]/blog/page.js:1:1078)
+    at <unknown> (.next/server/chunks/474.js:1:57342)
+    at <unknown> (.next/server/chunks/474.js:1:58087)
+    at <unknown> (.next/server/chunks/474.js:1:59030)
+    at a (.next/server/chunks/474.js:1:59220)
+    at d (.next/server/app/[locale]/blog/page.js:1:738) {
+  digest: 'NEXT_HTTP_ERROR_FALLBACK;404'
+}
+Error loading messages: Error: NEXT_HTTP_ERROR_FALLBACK;404
+    at o (.next/server/app/page.js:1:4059)
+    at <unknown> (.next/server/app/[locale]/blog/page.js:1:1078)
+    at <unknown> (.next/server/chunks/474.js:1:57342)
+    at <unknown> (.next/server/chunks/474.js:1:58087)
+    at <unknown> (.next/server/chunks/474.js:1:59030)
+    at a (.next/server/chunks/474.js:1:59220)
+    at d (.next/server/app/[locale]/blog/page.js:1:738) {
+  digest: 'NEXT_HTTP_ERROR_FALLBACK;404'
+}
+Error loading messages: Error: NEXT_HTTP_ERROR_FALLBACK;404
+    at o (.next/server/app/page.js:1:4059)
+    at <unknown> (.next/server/app/[locale]/blog/page.js:1:1078)
+    at <unknown> (.next/server/chunks/474.js:1:57342)
+    at <unknown> (.next/server/chunks/474.js:1:58087)
+    at <unknown> (.next/server/chunks/474.js:1:59030)
+    at a (.next/server/chunks/474.js:1:59220)
+    at d (.next/server/app/[locale]/blog/page.js:1:738) {
+  digest: 'NEXT_HTTP_ERROR_FALLBACK;404'
+}
+Error loading messages: Error: NEXT_HTTP_ERROR_FALLBACK;404
+    at o (.next/server/app/page.js:1:4059)
+    at <unknown> (.next/server/app/[locale]/blog/page.js:1:1078)
+    at <unknown> (.next/server/chunks/474.js:1:57342)
+    at <unknown> (.next/server/chunks/474.js:1:58087)
+    at <unknown> (.next/server/chunks/474.js:1:59030)
+    at a (.next/server/chunks/474.js:1:59220)
+    at d (.next/server/app/[locale]/blog/page.js:1:738) {
+  digest: 'NEXT_HTTP_ERROR_FALLBACK;404'
+}
+Error loading messages: Error: NEXT_HTTP_ERROR_FALLBACK;404
+    at o (.next/server/app/page.js:1:4059)
+    at <unknown> (.next/server/app/[locale]/blog/page.js:1:1078)
+    at <unknown> (.next/server/chunks/474.js:1:57342)
+    at <unknown> (.next/server/chunks/474.js:1:58087)
+    at <unknown> (.next/server/chunks/474.js:1:59030)
+    at a (.next/server/chunks/474.js:1:59220)
+    at d (.next/server/app/[locale]/blog/page.js:1:738) {
+  digest: 'NEXT_HTTP_ERROR_FALLBACK;404'
+}
+Error loading messages: Error: NEXT_HTTP_ERROR_FALLBACK;404
+    at o (.next/server/app/page.js:1:4059)
+    at <unknown> (.next/server/app/[locale]/blog/page.js:1:1078)
+    at <unknown> (.next/server/chunks/474.js:1:57342)
+    at <unknown> (.next/server/chunks/474.js:1:58087)
+    at <unknown> (.next/server/chunks/474.js:1:59030)
+    at a (.next/server/chunks/474.js:1:59220)
+    at d (.next/server/app/[locale]/blog/page.js:1:738) {
+  digest: 'NEXT_HTTP_ERROR_FALLBACK;404'
+}
