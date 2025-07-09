@@ -5,6 +5,10 @@
   "nav": {
     "home": "Home",
     "blog": "Blog",
+    "tutorials": "Tutorials",
+    "tools": "Tools",
+    "news": "News",
+    "community": "Community",
     "about": "About",
     "contact": "Contact",
     "language": "Language"
@@ -18,7 +22,11 @@
     "magicEmail": "Magic Email",
     "faq": "Frequently Asked Questions",
     "blog": "Latest Articles",
-    "about": "About Us"
+    "about": "About Us",
+    "tutorials": "Tutorials & Guides",
+    "tools": "Tools & Resources",
+    "news": "News & Updates",
+    "community": "Community"
   },
   "status": {
     "loading": "Loading domain...",
@@ -83,5 +91,125 @@
     "zh": "中文",
     "ja": "日本語",
     "hi": "हिन्दी"
+  },
+  "tutorials": {
+    "title": "Z-Library Tutorials & Guides",
+    "subtitle": "Complete guides to help you make the most of Z-Library",
+    "zlibraryUsage": {
+      "title": "Z-Library Usage Guide",
+      "subtitle": "Learn how to register, search, and download from Z-Library",
+      "description": "Complete step-by-step tutorial for using Z-Library effectively"
+    },
+    "academicSearch": {
+      "title": "Academic Resource Search Tips",
+      "subtitle": "Master the art of finding scholarly materials",
+      "description": "Advanced techniques for discovering academic papers and research"
+    },
+    "formatConversion": {
+      "title": "E-book Format Conversion Guide",
+      "subtitle": "Convert between different e-book formats",
+      "description": "Learn how to convert PDF, EPUB, MOBI, and other formats"
+    },
+    "citationTools": {
+      "title": "Citation Management Tools",
+      "subtitle": "Organize and cite your research properly",
+      "description": "Comprehensive guide to reference management software"
+    }
+  },
+  "tools": {
+    "title": "Academic Tools & Resources",
+    "subtitle": "Essential tools for researchers and students",
+    "converters": {
+      "title": "Format Conversion Tools",
+      "subtitle": "Convert between different file formats",
+      "description": "External tools for converting documents and e-books"
+    },
+    "searchEngines": {
+      "title": "Academic Search Engines",
+      "subtitle": "Find scholarly articles and papers",
+      "description": "Comprehensive list of academic search platforms"
+    },
+    "freeResources": {
+      "title": "Free Academic Resources",
+      "subtitle": "Open access journals and databases",
+      "description": "Discover free scholarly content online"
+    }
+  },
+  "news": {
+    "title": "Academic News & Updates",
+    "subtitle": "Stay informed about the latest developments",
+    "zlibraryNews": {
+      "title": "Z-Library Updates",
+      "subtitle": "Latest Z-Library developments and changes",
+      "description": "Keep up with Z-Library news and announcements"
+    },
+    "academicNews": {
+      "title": "Academic World News",
+      "subtitle": "Research and education updates",
+      "description": "Latest developments in academic publishing"
+    },
+    "openAccess": {
+      "title": "Open Access Updates",
+      "subtitle": "Open access policy changes and trends",
+      "description": "Stay informed about open access initiatives"
+    }
+  },
+  "community": {
+    "title": "Community & Support",
+    "subtitle": "Connect with other users and get help",
+    "comments": {
+      "title": "User Comments",
+      "subtitle": "Share your experience and read others' feedback",
+      "description": "Community discussion and support"
+    },
+    "recommendations": {
+      "title": "Resource Recommendations",
+      "subtitle": "Discover new books and academic resources",
+      "description": "Community-driven recommendations"
+    },
+    "feedback": {
+      "title": "User Feedback",
+      "subtitle": "Help us improve our service",
+      "description": "Share your suggestions and report issues"
+    }
+  },
+  "content": {
+    "academicGuide": {
+      "title": "How to Find Free Academic Resources",
+      "subtitle": "Complete guide to accessing scholarly content",
+      "description": "Discover the best ways to find free academic papers and books"
+    },
+    "writingTools": {
+      "title": "Academic Writing Essential Tools",
+      "subtitle": "Tools every researcher needs",
+      "description": "Must-have software and resources for academic writing"
+    },
+    "readingList": {
+      "title": "Graduate Student Reading Lists",
+      "subtitle": "Essential books for graduate studies",
+      "description": "Curated reading lists by academic discipline"
+    },
+    "journalGuide": {
+      "title": "Open Access Journal Recommendations",
+      "subtitle": "Best open access journals by field",
+      "description": "Discover high-quality open access publications"
+    }
+  },
+  "comparisons": {
+    "databases": {
+      "title": "Academic Database Comparison",
+      "subtitle": "Compare different research databases",
+      "description": "Detailed comparison of academic search platforms"
+    },
+    "ereaders": {
+      "title": "E-reader Recommendations",
+      "subtitle": "Best devices for reading academic content",
+      "description": "Compare features and find the right e-reader"
+    },
+    "citationSoftware": {
+      "title": "Citation Software Review",
+      "subtitle": "Compare reference management tools",
+      "description": "Detailed review of citation management software"
+    }
   }
 }

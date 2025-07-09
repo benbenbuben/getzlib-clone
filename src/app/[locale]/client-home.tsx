@@ -85,6 +85,63 @@ export default function ClientHome({ locale, blogPosts }: ClientHomeProps) {
                 <a href={`/${locale}`} className="text-sm font-medium hover:text-primary transition-colors">
                   {t('nav.home')}
                 </a>
+                <div className="relative group">
+                  <span className="text-sm font-medium hover:text-primary transition-colors cursor-pointer">
+                    {t('nav.tutorials')}
+                  </span>
+                  <div className="absolute top-full left-0 mt-2 w-56 bg-background border rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div className="p-2 space-y-1">
+                      <a href={`/${locale}/tutorials/zlibrary-usage`} className="block px-3 py-2 rounded-md text-sm hover:bg-muted/50 transition-colors">
+                        Z-Library Usage Guide
+                      </a>
+                      <a href={`/${locale}/tutorials/academic-search`} className="block px-3 py-2 rounded-md text-sm hover:bg-muted/50 transition-colors">
+                        Academic Search Tips
+                      </a>
+                      <a href={`/${locale}/tutorials/format-conversion`} className="block px-3 py-2 rounded-md text-sm hover:bg-muted/50 transition-colors">
+                        Format Conversion
+                      </a>
+                      <a href={`/${locale}/tutorials/citation-tools`} className="block px-3 py-2 rounded-md text-sm hover:bg-muted/50 transition-colors">
+                        Citation Tools
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative group">
+                  <span className="text-sm font-medium hover:text-primary transition-colors cursor-pointer">
+                    {t('nav.tools')}
+                  </span>
+                  <div className="absolute top-full left-0 mt-2 w-52 bg-background border rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div className="p-2 space-y-1">
+                      <a href={`/${locale}/tools/converters`} className="block px-3 py-2 rounded-md text-sm hover:bg-muted/50 transition-colors">
+                        Format Converters
+                      </a>
+                      <a href={`/${locale}/tools/search-engines`} className="block px-3 py-2 rounded-md text-sm hover:bg-muted/50 transition-colors">
+                        Academic Search Engines
+                      </a>
+                      <a href={`/${locale}/tools/free-resources`} className="block px-3 py-2 rounded-md text-sm hover:bg-muted/50 transition-colors">
+                        Free Resources
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative group">
+                  <span className="text-sm font-medium hover:text-primary transition-colors cursor-pointer">
+                    Guides
+                  </span>
+                  <div className="absolute top-full left-0 mt-2 w-52 bg-background border rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div className="p-2 space-y-1">
+                      <a href={`/${locale}/guides/academic-resources`} className="block px-3 py-2 rounded-md text-sm hover:bg-muted/50 transition-colors">
+                        Academic Resources Guide
+                      </a>
+                      <a href={`/${locale}/guides/writing-tools`} className="block px-3 py-2 rounded-md text-sm hover:bg-muted/50 transition-colors">
+                        Writing Tools Guide
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <a href={`/${locale}/news`} className="text-sm font-medium hover:text-primary transition-colors">
+                  {t('nav.news')}
+                </a>
                 <a href={`/${locale}/blog`} className="text-sm font-medium hover:text-primary transition-colors">
                   {t('nav.blog')}
                 </a>
@@ -307,6 +364,75 @@ export default function ClientHome({ locale, blogPosts }: ClientHomeProps) {
             </div>
           </section>
         )}
+
+        {/* Quick Links Section */}
+        <section className="py-8 md:py-12">
+          <h2 className="text-xl md:text-2xl font-bold mb-6">Explore More Resources</h2>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="text-lg">
+                  <a href={`/${locale}/tutorials/zlibrary-usage`} className="hover:text-primary transition-colors">
+                    Z-Library Usage Guide
+                  </a>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-sm mb-4">
+                  Learn how to effectively use Z-Library for academic research and book discovery.
+                </p>
+                <a 
+                  href={`/${locale}/tutorials/zlibrary-usage`}
+                  className="text-primary hover:underline text-sm font-medium"
+                >
+                  Read Tutorial →
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="text-lg">
+                  <a href={`/${locale}/tools/free-resources`} className="hover:text-primary transition-colors">
+                    Free Academic Resources
+                  </a>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-sm mb-4">
+                  Discover open access journals, databases, and academic tools available for free.
+                </p>
+                <a 
+                  href={`/${locale}/tools/free-resources`}
+                  className="text-primary hover:underline text-sm font-medium"
+                >
+                  Explore Resources →
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="text-lg">
+                  <a href={`/${locale}/guides/academic-resources`} className="hover:text-primary transition-colors">
+                    Academic Research Guide
+                  </a>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-sm mb-4">
+                  Complete guide to finding and accessing academic resources for your research.
+                </p>
+                <a 
+                  href={`/${locale}/guides/academic-resources`}
+                  className="text-primary hover:underline text-sm font-medium"
+                >
+                  Read Guide →
+                </a>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
       </main>
 
       {/* Footer */}
@@ -350,6 +476,20 @@ export default function ClientHome({ locale, blogPosts }: ClientHomeProps) {
               <p className="text-center md:text-left text-xs md:text-sm text-muted-foreground">
                 {t('footer.copyright')}
               </p>
+              <div className="flex flex-col md:flex-row gap-4 md:gap-6 text-center md:text-right">
+                <a
+                  href={`/${locale}/privacy`}
+                  className="text-xs md:text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Privacy Policy
+                </a>
+                <a
+                  href={`/${locale}/terms`}
+                  className="text-xs md:text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Terms of Service
+                </a>
+              </div>
             </div>
           </div>
         </div>
