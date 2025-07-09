@@ -2,7 +2,6 @@ const createNextIntlPlugin = require('next-intl/plugin');
 const createMDX = require('@next/mdx');
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
-
 const withMDX = createMDX({
   extension: /\.mdx?$/,
   options: {
@@ -20,9 +19,6 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-};
-
-module.exports = {
   async rewrites() {
     return [
       {
@@ -31,6 +27,6 @@ module.exports = {
       },
     ]
   },
-}
+};
 
 module.exports = withNextIntl(withMDX(nextConfig));
